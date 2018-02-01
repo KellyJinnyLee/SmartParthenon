@@ -38,7 +38,9 @@ public class ParthenonBuilder : MonoBehaviour
         tr3.localScale = new Vector3(floorWidth * 0.9f * 0.9f, floorHeight, floorDepth * 0.9f * 0.9f);
         tr3.position = new Vector3(0, floorHeight*2f, 0);
 
-
+        var newGameobject4 = Instantiate(cylinderPrefab, transform);
+        var tr4 = newGameobject4.transform;
+ 
     }
 
     [ContextMenu("Destroy All")]
